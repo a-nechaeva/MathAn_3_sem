@@ -145,22 +145,124 @@
 \newpage
 
 \section{задание.}
-\textit{Найти частные производные данной функции $f(x, y)$ в точке $(0, 0)$. Выяснить, является ли функция дифференцируемой в точке $(0, 0)$. Найти её дифференциал.}
+\textit{Найти частные производные данной функции $f(x, y)$ в точке $(0, 0)$. Выяснить, является ли функция дифференцируемой в точке $(0, 0)$. Найти её дифференциал. Пункт 2.}
 \begin{equation}
 f(x, y) = y + \cos \sqrt[3]{x^2 + y^2}
 \end{equation}
-\subsection{}
+\subsection{Частные производные}
 
 \begin{equation}
 \frac{\partial f}{\partial x} (x_0, y_0) = \lim_{\Delta x \to 0} \frac{\Delta_x f}{\Delta x} = \lim_{\Delta x \to 0} \frac{f ( x_0 + \Delta x, y_0) - f(x_0, y_0)}{\Delta x}
 \end{equation}
+\\
 
+Производная по $x$ в точке $(0, 0)$:
 \begin{multline}
 \frac{\partial f}{\partial x} (0, 0) = \lim_{\Delta x \to 0} \frac{\cos \sqrt[3]{( \Delta x)^2} - \cos 0}{\Delta x} = 
 -2 \lim_{\Delta x \to 0} \frac{\sin^2  \frac{ \sqrt[3]{( \Delta x)^2}}{2}}{\Delta x} =\\
 = -2 \lim_{\Delta x \to 0} \frac{\sin^2  \frac{ \sqrt[3]{( \Delta x)^2}}{2} \sqrt[3]{ \Delta x}}{4 \left(\frac{ \sqrt[3]{( \Delta x)^2}}{2} \right)^2} = 0
 \end{multline}
 
+
+Производная по $y$ в точке $(0, 0)$:
+\begin{multline}
+\frac{\partial f}{\partial y} (0, 0) = \lim_{\Delta y \to 0} \frac{\Delta y + \cos \sqrt[3]{( \Delta y)^2} - \cos 0}{\Delta y} = 
+\lim_{\Delta y \to 0} \left(1 +  \frac{\cos \sqrt[3]{( \Delta y)^2} - 1}{\Delta y} \right) =\\
+= 1 - 2 \lim_{\Delta y \to 0} \frac{\sin^2  \frac{ \sqrt[3]{( \Delta y)^2}}{2}}{\Delta y} 
+=1 -2 \lim_{\Delta y \to 0} \frac{\sin^2  \frac{ \sqrt[3]{( \Delta y)^2}}{2} \sqrt[3]{ \Delta y}}{4 \left(\frac{ \sqrt[3]{( \Delta y)^2}}{2} \right)^2} = 1
+\end{multline}
+
+
+\subsection{Дифференцируемость в точке  $(0, 0)$}
+
+
+\subsection{Дифференциал}
+
+\begin{equation}
+df = \frac{\partial f}{\partial x} dx + \frac{\partial f}{\partial y} dy
+\end{equation}
+Найдем частные производные:
+
+\begin{equation}
+\frac{\partial f}{\partial x} = \left( y + \cos \sqrt[3]{x^2 + y^2} \right)'_x = -\frac{2x}{3} \frac{\sin \sqrt[3]{x^2 + y^2}}{\sqrt[3]{ \left( x^2 + y^2 \right)^2}}
+\end{equation}
+
+\begin{equation}
+\frac{\partial f}{\partial y} = \left( y + \cos \sqrt[3]{x^2 + y^2} \right)'_y = 1 -\frac{2y}{3} \frac{\sin \sqrt[3]{x^2 + y^2}}{\sqrt[3]{ \left( x^2 + y^2 \right)^2}}
+\end{equation}
+Терерь запишем полный дифференциал:
+
+\begin{equation}
+df =  -\frac{2x}{3} \frac{\sin \sqrt[3]{x^2 + y^2}}{\sqrt[3]{ \left( x^2 + y^2 \right)^2}} dx + \left( 1 -\frac{2y}{3} \frac{\sin \sqrt[3]{x^2 + y^2}}{\sqrt[3]{ \left( x^2 + y^2 \right)^2}}  \right) dy
+\end{equation}
+
+\newpage
+
+\section{задание}
+\textit{Найти производную данной функции в направлении данного вектора в заданной точке $M$. Пункт 8.}
+
+\begin{equation}
+f(x, y, z) = exp(x + 2xy + 3xyz)
+\end{equation}
+по направлению внутренней нормали к поверхности $x^2 + y^2 + z^2 + 2z = 0$, $M \left( \frac{1}{2}, \frac{\sqrt{3}}{2}, 0 \right)$
+
+
+\newpage
+
+\section{задание}
+\textit{Произвести указанную замену в данном дифференциальном уравнении. Решить полученное дифференциальное уравнение в новых переменных. Показать, что найденное решение (в исходных переменных) удовлетворяет исходному уравнению. Пункт 3.}\\
+\\
+$u$ и $v$ -- новые независимые переменные, $w$ -- новая функция. $u=x+y, \, v = x - y, \, w+z = xy,$
+
+\begin{equation}
+\frac{\partial^2 z}{\partial x^2} + 2 \frac{\partial^2 z}{\partial x \partial y} + \frac{\partial^2 z}{\partial y^2} = 0
+\end{equation}
+ $z=z(x, y)$, $w=w(u, v)$, $u = u(x, y)$, $v = v(x, y)$
+
+Для начала найдем все производные второго порядка функции $w$ по переменным $x$ и $y$:
+\begin{equation}
+w'_x = w'_u \cdot u'_x + w'_v \cdot v'_x = w'_u + w'_v
+\end{equation}
+
+% for x
+\begin{equation}
+w''_{ux}  = w''_{uu} \cdot u'_x + w''_{uv} \cdot v'_x = w''_{uu} + w''_{uv}
+\end{equation}
+
+\begin{equation}
+w''_{vx}  = w''_{vu} \cdot u'_x + w''_{vv} \cdot v'_x = w''_{vu} + w''_{vv}
+\end{equation}
+
+Вторая производная по  $x$:
+\begin{equation}
+w''_{xx} = w''_{uu} + 2w''_{uv} + w''_{vv}
+\end{equation}
+
+
+\begin{equation}
+w'_y = w'_u \cdot u'_y + w'_v \cdot v'_y = w'_u - w'_v
+\end{equation}
+
+\begin{equation}
+w''_{uy}  = w''_{uu} \cdot u'_y + w''_{uv} \cdot v'_y = w''_{uu} - w''_{uv}
+\end{equation}
+
+\begin{equation}
+w''_{vy}  = w''_{vu} \cdot u'_y + w''_{vv} \cdot v'_y = w''_{vu} - w''_{vv}
+\end{equation}
+
+ Вторая производная по $y$:
+\begin{equation}
+w''_{yy} = w''_{uu} - 2w''_{uv} + w''_{vv}
+\end{equation}
+
+Вторая производная по  $x$ и $y$:
+
+\begin{equation}
+w''_{yx} = w''_{xy} =  w''_{uu} -  w''_{vv}
+\end{equation}
+\\
+Теперь выразим $z''_{xx}$,  $z''_{xy}$ и $z''_{yy}$ из $w + z = xy$:
 \end{document}
 
 
