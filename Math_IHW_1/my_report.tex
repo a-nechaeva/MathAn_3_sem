@@ -202,7 +202,7 @@ df =  -\frac{2x}{3} \frac{\sin \sqrt[3]{x^2 + y^2}}{\sqrt[3]{ \left( x^2 + y^2 \
 \textit{Найти производную данной функции в направлении данного вектора в заданной точке $M$. Пункт 8.}
 
 \begin{equation}
-f(x, y, z) = exp(x + 2xy + 3xyz)
+f(x, y, z) = \exp(x + 2xy + 3xyz)
 \end{equation}
 по направлению внутренней нормали к поверхности $x^2 + y^2 + z^2 + 2z = 1$, $M \left( \frac{1}{2}, \frac{\sqrt{3}}{2}, 0 \right)$\\
 \\
@@ -233,8 +233,74 @@ F'_y  \left( M \right) = 2 \frac{\sqrt{3}}{2} = \sqrt{3}
 \end{equation}
 
 \begin{equation}
-F'_z  \left( M \right) = 0
+F'_z  \left( M \right) = 2
 \end{equation}
+
+Искомая плоскость:
+\begin{equation}
+x - \frac{1}{2}  +  \sqrt{3} \cdot (y - \frac{\sqrt{3}}{2}) + 2z= 0
+\end{equation}
+
+\begin{equation}
+x  + \sqrt{3}y + 2z - 2= 0
+\end{equation}
+\\
+Вектор нормали к плоскости $x  + \sqrt{3}y + 2z - 2= 0$ будет выглядеть $\vec{n} = \left( 1, \sqrt{3}, 2 \right)$. Поверхность  $x^2 + y^2 + z^2 + 2z = 1$ представляет собой сферу  $x^2 + y^2 + \left( z + 1\right)^2 = 2$ с центром $O = (0, 0, -1)$ и радиусом $R = \sqrt{2}$. Так как точкой начала вектора $\vec{n}$ является  $M \left( \frac{1}{2}, \frac{\sqrt{3}}{2}, 0 \right)$, а его координаты  $\vec{n} = \left( 1, \sqrt{3}, 2 \right)$, то точкой конца вектора будет $\left(  \frac{3}{2}, \frac{3 \sqrt{3}}{2}, 2 \right)$. То есть вектор $\vec{n} = \left( 1, \sqrt{3}, 2 \right)$ направлен наружу относительно поверхности.\\
+\\
+Внутренняя нормаль $\vec{n}_{in} = \left( -1, -\sqrt{3}, -2 \right)$. \\
+Получим нормированный вектор, по направлению которого будем вычислять производную:
+\begin{equation}
+\left|\vec{n}_{in}  \right| = \sqrt{1 + 3 + 4} =  \sqrt{8} = 2\sqrt{2}
+\end{equation}
+
+\begin{equation}
+l = \left( -\frac{1}{2\sqrt{2}}, - \frac{\sqrt{3}}{2\sqrt{2}}, - \frac{1}{\sqrt{2}} \right)
+\end{equation}
+
+Вычислим частные производные от $f(x, y, z) = \exp(x + 2xy + 3xyz)$ в точке $M \left( \frac{1}{2}, \frac{\sqrt{3}}{2}, 0 \right)$:
+
+\begin{equation}
+f'_x = \left(1 + 2y + 3yz \right) \exp(x + 2xy + 3xyz)
+\end{equation}
+
+\begin{equation}
+f'_y  = \left( 2x + 3xz \right) \exp(x + 2xy + 3xyz)
+\end{equation}
+
+\begin{equation}
+f'_z   = 3xy \exp(x + 2xy + 3xyz)
+\end{equation}
+
+\begin{equation}
+f'_x  \left( M \right) =  \left(1 + 2 \frac{\sqrt{3}}{2} \right) \exp \left( \frac{1}{2} + 2 \frac{1}{2}\frac{\sqrt{3}}{2} \right) =
+\left(1 + \sqrt{3} \right) \exp \left( \frac{\sqrt{3} + 1}{2} \right) 
+\end{equation}
+
+\begin{equation}
+f'_y  \left( M \right) =  \left( 2\frac{1}{2}  \right) \exp \left(\frac{1}{2} + 2\frac{1}{2}\frac{\sqrt{3}}{2} \right) =
+\exp \left(\frac{\sqrt{3} + 1}{2} \right)
+\end{equation}
+
+\begin{equation}
+f'_z  \left( M \right) = 3\frac{1}{2}\frac{\sqrt{3}}{2} \exp \left(\frac{1}{2} + 2\frac{1}{2}\frac{\sqrt{3}}{2} \right) =
+\frac{3 \sqrt{3}}{4} \exp \left(\frac{\sqrt{3} + 1}{2} \right)
+\end{equation}
+
+Вычислим производную по направлению $l$ в точке $M$:
+
+\begin{equation}
+\frac{\partial f}{\partial l} = \left(\left(1 + \sqrt{3} \right) e^{ \frac{\sqrt{3} + 1}{2}} , e^{ \frac{\sqrt{3} + 1}{2}}, \frac{3 \sqrt{3}}{4} e^{ \frac{\sqrt{3} + 1}{2}  } \right)
+\begin{pmatrix}
+ -\frac{1}{2\sqrt{2}}\\
+\\
+- \frac{\sqrt{3}}{2\sqrt{2}}\\
+\\
+- \frac{1}{\sqrt{2}}
+\end{pmatrix}
+=
+\end{equation}
+
+
 
 
 
