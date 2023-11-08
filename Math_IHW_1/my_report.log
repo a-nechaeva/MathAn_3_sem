@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  8 NOV 2023 12:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  8 NOV 2023 19:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1206,7 +1206,12 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count356
 \l__pdf_internal_box=\box118
 )
-(./my_report.aux)
+(./my_report.aux
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
+9.
+ (c:/texlive/2023/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+))
 \openout1 = `my_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 142.
@@ -1224,11 +1229,6 @@ LaTeX Font Info:    ... okay on input line 142.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 142.
 LaTeX Font Info:    ... okay on input line 142.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 142.
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
-42.
- (c:/texlive/2023/texmf-dist/tex/latex/cyrillic/t2acmr.fd
-File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)
 LaTeX Font Info:    ... okay on input line 142.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 142.
 LaTeX Font Info:    ... okay on input line 142.
@@ -1428,51 +1428,90 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[6] (./my_report.aux)
+[6]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\footskip}{12.0pt}.
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 483--485
+
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\footskip}{12.0pt}.
+
+[8]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\footskip}{12.0pt}.
+
+[9]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\footskip}{12.0pt}.
+
+[10]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\footskip}{12.0pt}.
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 604--607
+
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\footskip}{12.0pt}.
+
+[12] (./my_report.aux)
  ***********
 LaTeX2e <2023-06-01>
 L3 programming layer <2023-06-05>
  ***********
-
-
-Package rerunfilecheck Warning: File `my_report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `my_report.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  33DF1F860BD85E4306A3488B4077E551;976.
+Package rerunfilecheck Info: File `my_report.out' has not changed.
+(rerunfilecheck)             Checksum: BBB5A9E6870E2E668F40D3B87E5EAD10;1174.
  ) 
 Here is how much of TeX's memory you used:
- 53007 strings out of 475734
- 1311262 string characters out of 5786229
- 2013828 words of memory out of 5000000
- 73076 multiletter control sequences out of 15000+600000
- 528013 words of font info for 70 fonts, out of 8000000 for 9000
+ 53076 strings out of 475734
+ 1312125 string characters out of 5786229
+ 2013881 words of memory out of 5000000
+ 73088 multiletter control sequences out of 15000+600000
+ 528830 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,14n,89p,866b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pf
-b><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tex
-live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2023/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist
-/fonts/type1/public/cm-super/sfbi1000.pfb><c:/texlive/2023/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
-cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/s
-frm0800.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pf
-b><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texl
-ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/t
-exmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2023/texmf-dist/
-fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on my_report.pdf (7 pages, 279255 bytes).
+st/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2023/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.p
+fb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texl
+ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2023/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/typ
+e1/public/cm-super/sfbi1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
+cm-super/sfbx1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/s
+fbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pf
+b><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texl
+ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2023/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2023/texmf-dist/
+fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type
+1/public/cm-super/sfti1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/c
+m-super/sfti1200.pfb>
+Output written on my_report.pdf (13 pages, 321412 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
- 50 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 256 compressed objects within 3 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 
