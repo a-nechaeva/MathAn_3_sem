@@ -174,7 +174,16 @@ f(x, y) = y + \cos \sqrt[3]{x^2 + y^2}
 
 
 \subsection{Дифференцируемость в точке  $(0, 0)$}
-
+Функция будет дифференцируема в точке $\left(0;0 \right)$, если для ее приращения в этой точке выполняется равенство:
+\begin{equation}
+\Delta f (0;0) = \frac{\partial f}{\partial x} (0;0) \cdot \Delta x +  \frac{\partial f}{\partial y} (0;0) \cdot \Delta y + o(\rho)\, ,
+\end{equation}
+где $\rho = \sqrt{\Delta x^2 + \Delta y^2}$.\\
+Запишем формулу, подставив в нее выше найденные производные:
+\begin{equation}
+\Delta f (0;0) = 0 \cdot \Delta x +  1 \cdot \Delta y + o( \sqrt{\Delta x^2 + \Delta y^2}) = \Delta y + o( \sqrt{\Delta x^2 + \Delta y^2})
+\end{equation}
+\textit{\textbf{Ответ:}} функция дифференцируема в точке $(0, 0)$.
 
 \subsection{Дифференциал}
 
