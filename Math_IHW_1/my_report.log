@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  30 NOV 2023 09:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  11 DEC 2023 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1463,22 +1463,18 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 610--616
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 624--626
-
- []
-
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 646--649
+Underfull \hbox (badness 10000) in paragraph at lines 686--692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 700--702
 
  []
 
@@ -1487,19 +1483,29 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[13] (./my_report.aux)
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 722--725
+
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\footskip}{12.0pt}.
+
+[14] (./my_report.aux)
  ***********
 LaTeX2e <2023-06-01>
 L3 programming layer <2023-06-05>
  ***********
 Package rerunfilecheck Info: File `my_report.out' has not changed.
-(rerunfilecheck)             Checksum: BBB5A9E6870E2E668F40D3B87E5EAD10;1174.
+(rerunfilecheck)             Checksum: D6946ACF5E46D51A08C295C19048AADE;1345.
  ) 
 Here is how much of TeX's memory you used:
- 53086 strings out of 475734
- 1312249 string characters out of 5786229
+ 53097 strings out of 475734
+ 1312413 string characters out of 5786229
  2013881 words of memory out of 5000000
- 73088 multiletter control sequences out of 15000+600000
+ 73091 multiletter control sequences out of 15000+600000
  528830 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,14n,89p,866b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1523,10 +1529,10 @@ exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2023/texmf-dist/
 fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type
 1/public/cm-super/sfti1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/c
 m-super/sfti1200.pfb>
-Output written on my_report.pdf (14 pages, 324862 bytes).
+Output written on my_report.pdf (15 pages, 327977 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 271 compressed objects within 3 object streams
- 116 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 349 PDF objects out of 1000 (max. 8388607)
+ 285 compressed objects within 3 object streams
+ 124 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 

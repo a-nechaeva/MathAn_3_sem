@@ -509,9 +509,106 @@ M(1, 1, 1, 1)
 \end{equation}
 
 
+
+\begin{equation}
+\begin{cases}
+F_1(M) = 1 + 1 + 1 + 2 - 5 = 0\\
+F_2(M) = 1 + 1 + 1 + 1 -4 = 0
+\end{cases}
+\end{equation}
+
+\begin{equation}
+\begin{cases}
+y_1 = f_1 (x) = f_1 (x_1, x_2)\\
+y_2 = f_2 (x) = f_2 (x_1, x_2)
+\end{cases}
+\end{equation}
+\begin{equation}
+|F'_y| = 
+\begin{vmatrix} 
+\frac{\partial F_1}{\partial y_1} & \frac{\partial F_1}{\partial y_2}\\
+\\
+\frac{\partial F_2}{\partial y_1} & \frac{\partial F_2}{\partial y_2}
+\end{vmatrix}
+=
+\begin{vmatrix} 
+1 & 2 \\
+4y_1^3 & 4y_2^3
+\end{vmatrix}
+=
+\begin{vmatrix} 
+1 & 2 \\
+4 & 4
+\end{vmatrix}
+=-4 \neq 0
+\end{equation}
+Следовательно,  уравнение $F(x,y)=0, \, F=(F_1, F_2)$ задает неявно дифференцируемое отображение $y=f(x), \, y=(y_1, y_2), \, x = (x_1, \, x_2)$ в окрестности точки $M(x_1, x_2, y_1, y_2)$.
+
+\begin{equation}
+f'_x = - \frac{F'_x (M)}{F'_y (M)}
+\end{equation}
+
+\begin{equation}
+F'_x = 
+\begin{pmatrix} 
+\frac{\partial F_1}{\partial y_1} & \frac{\partial F_1}{\partial y_2}\\
+\\
+\frac{\partial F_2}{\partial y_1} & \frac{\partial F_2}{\partial y_2}
+\end{pmatrix}
+=
+\begin{vmatrix} 
+1 & 2 \\
+4y_1^3 & 4y_2^3
+\end{vmatrix}
+=
+\begin{vmatrix} 
+1 & 2 \\
+4 & 4
+\end{vmatrix}
+=-4 \neq 0
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
 \newpage
 
 \section{задание}
+\textit{С помощью метода Лагранжа исследовать функцию на условный экстремум при данном уравнении связи. Пункт 2.}
+
+\begin{equation}
+f(x, y, z) = x^2+2y^2+3z^2, \, x + 2y+3z=0, \, x^2 +y^2+z^2=1
+\end{equation}
+Запишем вид функции Лагранжа:
+\begin{equation}
+L = u(x, y, z) + \lambda_1 \phi_1 (x, y, z) + \lambda_2 \phi_2 (x, y, z)
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+\section{задание (старое)}
 \textit{С помощью метода Лагранжа исследовать функцию на условный экстремум при данном уравнении связи. Пункт 2.}
 
 \begin{equation}
