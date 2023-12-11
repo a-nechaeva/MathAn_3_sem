@@ -545,29 +545,101 @@ y_2 = f_2 (x) = f_2 (x_1, x_2)
 Следовательно,  уравнение $F(x,y)=0, \, F=(F_1, F_2)$ задает неявно дифференцируемое отображение $y=f(x), \, y=(y_1, y_2), \, x = (x_1, \, x_2)$ в окрестности точки $M(x_1, x_2, y_1, y_2)$.
 
 \begin{equation}
-f'_x = - \frac{F'_x (M)}{F'_y (M)}
+f'_x (M) = - \frac{F'_x (M)}{F'_y (M)}
 \end{equation}
 
 \begin{equation}
-F'_x = 
+F'_x (M)= 
 \begin{pmatrix} 
-\frac{\partial F_1}{\partial y_1} & \frac{\partial F_1}{\partial y_2}\\
+\frac{\partial F_1}{\partial x_1} & \frac{\partial F_1}{\partial x_2}\\
 \\
-\frac{\partial F_2}{\partial y_1} & \frac{\partial F_2}{\partial y_2}
+\frac{\partial F_2}{\partial x_1} & \frac{\partial F_2}{\partial x_2}
 \end{pmatrix}
 =
-\begin{vmatrix} 
-1 & 2 \\
-4y_1^3 & 4y_2^3
-\end{vmatrix}
+\begin{pmatrix} 
+1 & 1 \\
+3x_1^2 & 2x_2
+\end{pmatrix}
 =
-\begin{vmatrix} 
-1 & 2 \\
-4 & 4
-\end{vmatrix}
-=-4 \neq 0
+\begin{pmatrix} 
+1 & 1 \\
+3 & 2
+\end{pmatrix}
 \end{equation}
 
+
+\begin{equation}
+(F'_y)^{-1} (M) = 
+\begin{pmatrix} 
+1 & 2 \\
+4 & 4
+\end{pmatrix}^{-1}
+=
+\begin{pmatrix} 
+-1 & \frac{1}{2} \\
+\\
+1 & - \frac{1}{4}
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+f'_x (M) = - F'_x (F'_y)^{-1}  =
+\begin{pmatrix} 
+1 & 1 \\
+3 & 2
+\end{pmatrix}
+\begin{pmatrix} 
+-1 & \frac{1}{2} \\
+\\
+1 & - \frac{1}{4}
+\end{pmatrix}
+= -
+\begin{pmatrix}
+0 & \frac{1}{4}\\
+-1 & 1
+\end{pmatrix}
+=
+\begin{pmatrix}
+0 & -\frac{1}{4}\\
+1 & -1
+\end{pmatrix}
+\end{equation}
+
+Найдем производную второго порядка $\frac{\partial ^ 2 f_1}{\partial x_1^2}$
+\begin{equation}
+F'_x =
+\begin{pmatrix} 
+1 & 1 \\
+3x_1^2 & 2x_2
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+(F'_y)^{-1} =
+\begin{pmatrix} 
+1 & 2 \\
+4y_1^3 & 4y_2^3
+\end{pmatrix}^{-1}
+=
+\frac{1}{4y_2^3 - 8y_1^3}
+\begin{pmatrix} 
+4 y_2^3 & -2 \\
+-4y_1^3 & 1
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+f'_x =
+-\frac{1}{4y_2^3 - 8y_1^3}
+\begin{pmatrix} 
+1 & 1 \\
+3x_1^2 & 2x_2
+\end{pmatrix}
+\begin{pmatrix} 
+4 y_2^3 & -2 \\
+-4y_1^3 & 1
+\end{pmatrix}
+\end{equation}
 
 
 
