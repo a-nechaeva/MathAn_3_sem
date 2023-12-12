@@ -669,7 +669,21 @@ f(x, y, z) = x^2+2y^2+3z^2, \, x + 2y+3z=0, \, x^2 +y^2+z^2=1
 \end{equation}
 Запишем вид функции Лагранжа:
 \begin{equation}
-L = u(x, y, z) + \lambda_1 \phi_1 (x, y, z) + \lambda_2 \phi_2 (x, y, z)
+L = u(x, y, z) - \lambda_1 \phi_1 (x, y, z) - \lambda_2 \phi_2 (x, y, z)
+\end{equation}
+
+\begin{equation}
+L = x^2+2y^2+3z^2  - \lambda_1 \left(  x + 2y+3z \right) - \lambda_2 \left( x^2 +y^2+z^2 - 1   \right)
+\end{equation}
+
+\begin{equation}
+\begin{cases}
+L'_x = 2x - \lambda_1 -2 \lambda_2 x = 0\\
+L'_y = 4y  - 2\lambda_1  - 2\lambda_2 y = 0\\
+L'_z = 6z  - 3 \lambda_1  - 2\lambda_2 z = 0\\
+L'_{\lambda_1}=   x + 2y+3z = 0\\
+L'_ { \lambda_2} =  x^2 +y^2+z^2 - 1 = 0
+\end{cases}
 \end{equation}
 
 
