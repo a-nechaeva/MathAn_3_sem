@@ -24,7 +24,7 @@
 \fancypagestyle{style}{ % создание нового стиля style
 	\fancyhf{} % очистка колонтитулов
 	\fancyhead[LO, RE]{Типовой расчет № 1} % название документа наверху
-	\fancyhead[RO, LE]{ } % название section наверху
+	\fancyhead[RO, LE]{Функции нескольких переменных} % название section наверху
 	\fancyfoot[RO, LE]{\thepage} % номер страницы справа внизу на нечетных и слева внизу на четных
 	\renewcommand{\headrulewidth}{0.25pt} % толщина линии сверху
 	\renewcommand{\footrulewidth}{0pt} % толцина линии снизу
@@ -900,8 +900,113 @@ d^2L =
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
 % ЛАБОРАТОРНАЯ РАБОТА 1
 
+\section{Лабораторная работа Экстремумы ФНП}
+\textit{\textbf{Вариант 2}}\\
+
+\textit{Для данной функции}
+
+$$z(x,y) = x^3y^2(4-x-y)$$
+
+\textit{найти точки локальных экстремумов.}\\
+
+\subsection{Аналитический метод}
+
+
+% ПУНКТ 1
+\textit{\textbf{1. Найдем стационарные точки, т.е. точки, удовлетворяющие неоходимому условию экстремума.}}\\
+\begin{equation}
+z'_x = \left( x^3y^2(4-x-y)  \right)'_x = 3x^2y^2(4-x-y) - x^3y^2 = -x^2y^2 (4x - 12+3y)
+\end{equation}
+\begin{equation}
+z'_y = \left( x^3y^2(4-x-y)  \right)'_y = 2x^3y(4-x-y) - x^3y^2 = x^3y(8-2x-3y)
+\end{equation}
+
+\begin{equation}
+\begin{cases}
+z'_x = 0\\
+z'_y = 0
+\end{cases}
+\Rightarrow
+\left[
+\begin{array}{c}
+x = 0\\
+y = 0\\
+\begin{cases}
+4x - 12+3y= 0\\
+8-2x-3y = 0
+\end{cases}
+\end{array}
+\right.
+\end{equation}
+
+
+\begin{equation}
+\begin{cases}
+4x - 12+3y= 0\\
+8-2x-3y = 0
+\end{cases}
+\Rightarrow
+\begin{cases}
+x = 2\\
+y = \frac{4}{3} 
+\end{cases}
+\end{equation}
+
+\begin{equation}
+\Rightarrow
+\left[
+\begin{array}{c}
+x = 0\\
+y = 0\\
+\begin{cases}
+x = 2\\
+y = \frac{4}{3} 
+\end{cases}
+\end{array}
+\right.
+\end{equation}
+
+
+
+
+
+
+
+
+
+% ПУНКТ 2
+\textit{\textbf{2. Для каждой точки получить матрицу Гессе и проверить достаточное условие экстремума, сделать вывод.}}\\
+
+
+
+% ПУНКТ 3
+\textit{\textbf{3. В случае невыполнения достаточного условия проверить подозрительную точку, используя определение экстремума, сделать вывод.}}\\
+
+
+
+
+% ПУНКТ 4
+\textit{\textbf{4. Построить график данной функции и линии уровня. Отметить стационарные точки.}}\\
+
+
+
+\subsection{Численный метод}
 
 
 \end{document}
