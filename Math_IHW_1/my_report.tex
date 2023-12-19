@@ -992,11 +992,96 @@ y = \frac{4}{3}
 
 % ПУНКТ 2
 \textit{\textbf{2. Для каждой точки получить матрицу Гессе и проверить достаточное условие экстремума, сделать вывод.}}\\
+\\
+Матрица Гессе для функции 2-х переменных:\\
+\begin{equation}
+H = 
+\begin{pmatrix}
+z''_{xx} \left(M_0 \right) & z''_{xy}  \left(M_0 \right)\\
+z''_{yx}  \left(M_0 \right) & z''_{yy}  \left(M_0 \right)
+\end{pmatrix}
+\end{equation}
+Производные второго порядка:\\
+\begin{equation}
+z''_{xx} = \left( -x^2y^2 (4x - 12+3y) \right)'_x = -6xy^2(2x+y-4)
+\end{equation}
+\begin{equation}
+z''_{xy} = \left( -x^2y^2 (4x - 12+3y) \right)'_y = x^2y(24-8x-9y)
+\end{equation}
+\begin{equation}
+z''_{yx} = \left( x^3y(8-2x-3y)\right)'_x = x^2y(24-8x-9y)
+\end{equation}
+\begin{equation}
+z''_{yy} = \left( x^3y(8-2x-3y)\right)'_y = -2x^3(x+3y-4)
+\end{equation}
+
+
+\textit{При $x = 0$}
+\begin{equation}
+z''_{xx} \left(0, a \right)  = 0
+\end{equation}
+\begin{equation}
+z''_{xy} \left(0, a \right) = z''_{yx}\left(0, a \right)  = 0
+\end{equation}
+\begin{equation}
+z''_{yy} \left(0, a \right)= 0
+\end{equation}
+
+\textit{При $x = 0$ определитель матрицы Гессе равен нулю, следовательно, требуются дополнительные исследования для точек вида $ \left(0, a \right)$.}\\
+\\
+
+\textit{При $y = 0$}
+\begin{equation}
+z''_{xx} \left(b, 0 \right)  = 0
+\end{equation}
+\begin{equation}
+z''_{xy} \left(b, 0 \right) = z''_{yx}\left(b, 0 \right)  = 0
+\end{equation}
+\begin{equation}
+z''_{yy} \left(b, 0 \right)= -2b^3(b - 4)
+\end{equation}
+
+\textit{При $y = 0$ определитель матрицы Гессе равен нулю, следовательно, требуются дополнительные исследования для точек вида $ \left(b, 0 \right)$.}\\
+\\
+
+\textit{В точке $  \left(2, \frac{4}{3}\right)$}
+\begin{equation}
+z''_{xx}  \left(2, \frac{4}{3}\right) = -6\cdot 2\cdot  \left(\frac{4}{3} \right)^2(2\cdot 2+\frac{4}{3}-4)
+= -\frac{2^8}{3^2}
+\end{equation}
+\begin{equation}
+z''_{xy}  \left(2, \frac{4}{3}\right)= z''_{yx} \left(2, \frac{4}{3}\right)  = 2^2 \cdot \frac{4}{3}\left(24-8 \cdot 2-9 \cdot \frac{4}{3} \right)
+= - \frac{2^6}{3}
+\end{equation}
+\begin{equation}
+z''_{yy} \left(2, \frac{4}{3}\right)= -2 \cdot 2^3\left(2+3 \cdot \frac{4}{3}-4\right) = -2^5
+\end{equation}
+
+
+\begin{equation}
+\Delta H = 
+\begin{pmatrix}
+-\frac{2^8}{3^2} &  - \frac{2^6}{3}\\
+\\
+ - \frac{2^6}{3} &  -2^5
+\end{pmatrix}
+=  \frac{2^{13}}{3^2} -  \frac{2^{12}}{3^2} > 0
+\end{equation}
+\textit{Следовательно, в точке $  \left(2, \frac{4}{3}\right)$ есть экстремум, так как $z''_{xx}  \left(2, \frac{4}{3}\right) < 0$, то это \textbf{максимум}.}\\
+\\
+
+
+
+
+
+
 
 
 
 % ПУНКТ 3
 \textit{\textbf{3. В случае невыполнения достаточного условия проверить подозрительную точку, используя определение экстремума, сделать вывод.}}\\
+\\
+Достаточное условие не выполнено в точках вида  $ \left(0, a \right)$ и $ \left(b, 0 \right)$.
 
 
 
