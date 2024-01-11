@@ -145,7 +145,7 @@
 \newpage
 
 
-\fcolorbox{green}{white}{Текст\dots} 
+\fcolorbox{green}{white}{Исправленные задания вынесены в начало и отмечены зелеными рамками.} 
 
 \section{Задание 1 (новое)}
 \textit{Найти частные производные данной функции $f(x, y)$ в точке $(0, 0)$. Выяснить, является ли функция дифференцируемой в точке $(0, 0)$. Найти её дифференциал. \textbf{Пункт 2}.}
@@ -178,19 +178,37 @@ f(x, y) = y + \cos \sqrt[3]{x^2 + y^2}
 
 \subsection{Дифференцируемость в точке  $(0, 0)$}
 
+Функция будет дифференцируема в точке $\left(x_0;y_0 \right)$, если для ее приращения в этой точке выполняется равенство:
+
 \begin{equation}
 \fcolorbox{green}{white}{$f (x_0 + \Delta x, y_0 + \Delta y ) - f(x_0, y_0) = \frac{\partial f}{\partial x} (x_0, y_0) \Delta x + \frac{\partial f}{\partial y} (x_0, y_0) \Delta y + o(\sqrt{\Delta x^2 + \Delta y^2})$}
 \end{equation}
 
-Функция будет дифференцируема в точке $\left(0;0 \right)$, если для ее приращения в этой точке выполняется равенство:
 \begin{equation}
-\Delta f (0;0) = \frac{\partial f}{\partial x} (0;0) \cdot \Delta x +  \frac{\partial f}{\partial y} (0;0) \cdot \Delta y + o(\rho)\, ,
+\fcolorbox{green}{white}{$f (0 + \Delta x, 0 + \Delta y ) - f(0, 0) = \Delta y + \cos \sqrt[3]{\Delta x^2 + \Delta y^2} - 1$}
 \end{equation}
-где $\rho = \sqrt{\Delta x^2 + \Delta y^2}$.\\
-Запишем формулу, подставив в нее выше найденные производные:
+
+\fcolorbox{green}{white}{Докажем, что равенство ниже верное:}
 \begin{equation}
-\Delta f (0;0) = 0 \cdot \Delta x +  1 \cdot \Delta y + o( \sqrt{\Delta x^2 + \Delta y^2}) = \Delta y + o( \sqrt{\Delta x^2 + \Delta y^2})
+\fcolorbox{green}{white}{$ \lim \limits_{\Delta x \to 0 \, \, \Delta y \to 0}\cos \sqrt[3]{\Delta x^2 + \Delta y^2}-1 =  o(\sqrt{\Delta x^2 + \Delta y^2})$}
 \end{equation}
+
+\begin{equation}
+\fcolorbox{green}{white}{$ \lim \limits_{\Delta x \to 0 \, \, \Delta y \to 0} \frac{\cos \sqrt[3]{\Delta x^2 + \Delta y^2} -1}{\sqrt{\Delta x^2 + \Delta y^2}} =  o(1)$}
+\end{equation}
+
+\begin{equation}
+\fcolorbox{green}{white}{$\Delta x^2 + \Delta y^2 = t$}
+\end{equation}
+
+\begin{equation}
+\fcolorbox{green}{white}{$ \lim \limits_{t \to 0} \frac{\cos \sqrt[3]{t} -1}{\sqrt{t}} = 
+ - \lim \limits_{t \to 0} \left(\frac{1 - \cos \sqrt[3]{t}}{\frac{\sqrt[3]{t}^2}{2}} \right) \frac{\sqrt[3]{t}^2}{2\sqrt{t}} = 
+ - \lim \limits_{t \to 0} \frac{\sqrt[3]{t}^2}{2\sqrt{t}} = - \lim \limits_{t \to 0} t^\frac{1}{6} = 0$}
+\end{equation}
+
+\fcolorbox{green}{white}{Следовательно, функция дифференцируема в точке $(0, 0)$.}
+
 \textit{\textbf{Ответ:}} функция дифференцируема в точке $(0, 0)$.
 
 \subsection{Дифференциал}

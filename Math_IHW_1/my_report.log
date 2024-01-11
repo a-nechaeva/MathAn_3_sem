@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  11 JAN 2024 18:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  12 JAN 2024 00:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1356,6 +1356,11 @@ less.
 ine 144.
 
 
+Overfull \hbox (22.85396pt too wide) in paragraph at lines 148--149
+[][][][] 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
@@ -1375,7 +1380,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 179.
 
 
-Overfull \hbox (26.48071pt too wide) detected at line 183
+Overfull \hbox (26.48071pt too wide) detected at line 185
 [][][][][]
  []
 
@@ -1389,24 +1394,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.186 \begin{equation}
-                       [1]
+l.185 \end{equation}
+                     [1]
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 220--223
-
- []
-
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [3]
+Underfull \hbox (badness 10000) in paragraph at lines 238--241
+
+ []
+
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -1419,33 +1424,15 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 386--388
-
- []
-
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 407--409
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
 
  []
-
-
-Overfull \hbox (4.65665pt too wide) detected at line 424
- []$[]  []\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0) = [] [] = [] 
-[] =$ 
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 427.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 427.
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -1453,27 +1440,45 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [7]
+Underfull \hbox (badness 10000) in paragraph at lines 425--427
+
+ []
+
+
+Overfull \hbox (4.65665pt too wide) detected at line 442
+ []$[]  []\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0) = [] [] = [] 
+[] =$ 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 445.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 445.
+
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 466--470
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 506--512
-
- []
-
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [9]
+Underfull \hbox (badness 10000) in paragraph at lines 484--488
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--530
+
+ []
+
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -1486,23 +1491,13 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 574--577
-
- []
-
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [12]
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{12.0pt}.
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 743--745
+Underfull \hbox (badness 10000) in paragraph at lines 592--595
 
  []
 
@@ -1511,7 +1506,17 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
+[13]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\footskip}{12.0pt}.
+
 [14]
+Underfull \hbox (badness 10000) in paragraph at lines 761--763
+
+ []
+
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -1536,34 +1541,22 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 1025--1027
-
- []
-
-
-Overfull \hbox (11.66412pt too wide) detected at line 1075
- []$[]  \OML/cmm/m/it/10 d[]L \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/
-n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 216 [][] \OML/cmm/m/it/10 dz[] \OT1/cmr
-/m/n/10 + 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 784 [][] \OML/cmm/m/it/10 dz[]\OT1
-/cmr/m/n/10 +$ 
- []
-
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [19]
-Overfull \hbox (3.88632pt too wide) detected at line 1085
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1045
+
+ []
+
+
+Overfull \hbox (11.66412pt too wide) detected at line 1093
  []$[]  \OML/cmm/m/it/10 d[]L \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/
 n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 216 [][] \OML/cmm/m/it/10 dz[] \OT1/cmr
 /m/n/10 + 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 784 [][] \OML/cmm/m/it/10 dz[]\OT1
 /cmr/m/n/10 +$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1085--1090
-
  []
 
 
@@ -1572,7 +1565,25 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [20]
-Overfull \hbox (11.66412pt too wide) detected at line 1149
+Overfull \hbox (3.88632pt too wide) detected at line 1103
+ []$[]  \OML/cmm/m/it/10 d[]L \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/
+n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 216 [][] \OML/cmm/m/it/10 dz[] \OT1/cmr
+/m/n/10 + 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 784 [][] \OML/cmm/m/it/10 dz[]\OT1
+/cmr/m/n/10 +$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1103--1108
+
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\footskip}{12.0pt}.
+
+[21]
+Overfull \hbox (11.66412pt too wide) detected at line 1167
  []$[]  \OML/cmm/m/it/10 d[]L \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/
 n/10 2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 640 [][] \OML/cmm/m/it/10 dz[] \OMS/cms
 y/m/n/10 ^^@ \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 640 [][] \OML/c
@@ -1584,68 +1595,33 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 1171--1172
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1177--1178
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1183--1184
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1245--1248
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1245--1248
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1254--1256
-
- []
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{12.0pt}.
-
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 1281--1283
+Underfull \hbox (badness 10000) in paragraph at lines 1189--1190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1281--1283
+Underfull \hbox (badness 10000) in paragraph at lines 1195--1196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1295--1297
+Underfull \hbox (badness 10000) in paragraph at lines 1201--1202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1295--1297
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1320--1323
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1320--1323
+Underfull \hbox (badness 10000) in paragraph at lines 1272--1274
 
  []
 
@@ -1655,42 +1631,32 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 1333--1337
+Underfull \hbox (badness 10000) in paragraph at lines 1299--1301
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1333--1337
+Underfull \hbox (badness 10000) in paragraph at lines 1299--1301
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1333--1337
+Underfull \hbox (badness 10000) in paragraph at lines 1313--1315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1339--1343
+Underfull \hbox (badness 10000) in paragraph at lines 1313--1315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1339--1343
+Underfull \hbox (badness 10000) in paragraph at lines 1338--1341
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1345--1351
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1345--1351
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1345--1351
+Underfull \hbox (badness 10000) in paragraph at lines 1338--1341
 
  []
 
@@ -1700,15 +1666,60 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [24]
-<pic/graph.png, id=370, 413.545pt x 339.2675pt>
+Underfull \hbox (badness 10000) in paragraph at lines 1351--1355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1351--1355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1351--1355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1357--1361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1357--1361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1363--1369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1363--1369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1363--1369
+
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\footskip}{12.0pt}.
+
+[25]
+<pic/graph.png, id=377, 413.545pt x 339.2675pt>
 File: pic/graph.png Graphic file (type png)
 <use pic/graph.png>
-Package pdftex.def Info: pic/graph.png  used on input line 1363.
+Package pdftex.def Info: pic/graph.png  used on input line 1381.
 (pdftex.def)             Requested size: 172.13918pt x 141.22305pt.
-<pic/lines.png, id=372, 413.545pt x 416.55624pt>
+<pic/lines.png, id=379, 413.545pt x 416.55624pt>
 File: pic/lines.png Graphic file (type png)
 <use pic/lines.png>
-Package pdftex.def Info: pic/lines.png  used on input line 1365.
+Package pdftex.def Info: pic/lines.png  used on input line 1383.
 (pdftex.def)             Requested size: 172.13918pt x 173.39517pt.
 
 
@@ -1716,33 +1727,33 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[25 <./pic/graph.png> <./pic/lines.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1372--1377
+[26 <./pic/graph.png> <./pic/lines.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1390--1395
 
  []
 
-<pic/res_1.png, id=386, 642.4pt x 481.8pt>
+<pic/res_1.png, id=394, 642.4pt x 481.8pt>
 File: pic/res_1.png Graphic file (type png)
 <use pic/res_1.png>
-Package pdftex.def Info: pic/res_1.png  used on input line 1387.
+Package pdftex.def Info: pic/res_1.png  used on input line 1405.
 (pdftex.def)             Requested size: 309.84842pt x 232.39352pt.
-<pic/res_2.png, id=387, 642.4pt x 481.8pt>
+<pic/res_2.png, id=395, 642.4pt x 481.8pt>
 File: pic/res_2.png Graphic file (type png)
 <use pic/res_2.png>
-Package pdftex.def Info: pic/res_2.png  used on input line 1398.
+Package pdftex.def Info: pic/res_2.png  used on input line 1416.
 (pdftex.def)             Requested size: 309.84842pt x 232.39352pt.
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[26 <./pic/res_1.png (PNG copy)>]
+[27 <./pic/res_1.png (PNG copy)>]
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[27 <./pic/res_2.png (PNG copy)>] (./my_report.aux)
+[28 <./pic/res_2.png (PNG copy)>] (./my_report.aux)
  ***********
 LaTeX2e <2023-06-01>
 L3 programming layer <2023-06-05>
@@ -1751,10 +1762,10 @@ Package rerunfilecheck Info: File `my_report.out' has not changed.
 (rerunfilecheck)             Checksum: 0710E64AB80D2CF3FD7172DDBAAC9FB8;3127.
  ) 
 Here is how much of TeX's memory you used:
- 53250 strings out of 475734
- 1314660 string characters out of 5786229
- 2016977 words of memory out of 5000000
- 73144 multiletter control sequences out of 15000+600000
+ 53253 strings out of 475734
+ 1314693 string characters out of 5786229
+ 2016975 words of memory out of 5000000
+ 73143 multiletter control sequences out of 15000+600000
  531249 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,14n,89p,1023b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1783,10 +1794,10 @@ pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/te
 xlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb><c:/texlive/2023
 /texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2023/texmf-dis
 t/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on my_report.pdf (28 pages, 745623 bytes).
+Output written on my_report.pdf (29 pages, 748704 bytes).
 PDF statistics:
- 566 PDF objects out of 1000 (max. 8388607)
- 469 compressed objects within 5 object streams
- 219 named destinations out of 1000 (max. 500000)
+ 574 PDF objects out of 1000 (max. 8388607)
+ 476 compressed objects within 5 object streams
+ 223 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
