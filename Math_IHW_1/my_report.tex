@@ -144,7 +144,10 @@
 	\pagestyle{style}
 \newpage
 
-\section{задание.}
+
+\fcolorbox{green}{white}{Текст\dots} 
+
+\section{Задание 1 (новое)}
 \textit{Найти частные производные данной функции $f(x, y)$ в точке $(0, 0)$. Выяснить, является ли функция дифференцируемой в точке $(0, 0)$. Найти её дифференциал. \textbf{Пункт 2}.}
 \begin{equation}
 f(x, y) = y + \cos \sqrt[3]{x^2 + y^2}
@@ -207,7 +210,254 @@ df =  -\frac{2x}{3} \frac{\sin \sqrt[3]{x^2 + y^2}}{\sqrt[3]{ \left( x^2 + y^2 \
 
 \newpage
 
-\section{задание}
+\section{Задание 3 (новое).}
+
+\textit{Произвести указанную замену в данном дифференциальном уравнении. Решить полученное дифференциальное уравнение в новых переменных. Показать, что найденное решение (в исходных переменных) удовлетворяет исходному уравнению. \textbf{Пункт 3}.}\\
+\\
+$u$ и $v$ -- новые независимые переменные, $w$ -- новая функция. $u=x+y, \, v = x - y, \, w+z = xy,$
+
+\begin{equation}
+\frac{\partial^2 z}{\partial x^2} + 2 \frac{\partial^2 z}{\partial x \partial y} + \frac{\partial^2 z}{\partial y^2} = 0
+\end{equation}
+ $z=z(x, y)$, $w=w(u, v)$, $u = u(x, y)$, $v = v(x, y)$
+
+Для начала найдем все производные второго порядка функции $w$ по переменным $x$ и $y$:
+\begin{equation}
+w'_x = w'_u \cdot u'_x + w'_v \cdot v'_x = w'_u + w'_v
+\end{equation}
+
+% for x
+\begin{equation}
+w''_{ux}  = w''_{uu} \cdot u'_x + w''_{uv} \cdot v'_x = w''_{uu} + w''_{uv}
+\end{equation}
+
+\begin{equation}
+w''_{vx}  = w''_{vu} \cdot u'_x + w''_{vv} \cdot v'_x = w''_{vu} + w''_{vv}
+\end{equation}
+
+Вторая производная по  $x$:
+\begin{equation}
+w''_{xx} = w''_{uu} + 2w''_{uv} + w''_{vv}
+\end{equation}
+
+
+\begin{equation}
+w'_y = w'_u \cdot u'_y + w'_v \cdot v'_y = w'_u - w'_v
+\end{equation}
+
+\begin{equation}
+w''_{uy}  = w''_{uu} \cdot u'_y + w''_{uv} \cdot v'_y = w''_{uu} - w''_{uv}
+\end{equation}
+
+\begin{equation}
+w''_{vy}  = w''_{vu} \cdot u'_y + w''_{vv} \cdot v'_y = w''_{vu} - w''_{vv}
+\end{equation}
+
+ Вторая производная по $y$:
+\begin{equation}
+w''_{yy} = w''_{uu} - 2w''_{uv} + w''_{vv}
+\end{equation}
+
+Вторая производная по  $x$ и $y$:
+
+\begin{equation}
+w''_{yx} = w''_{xy} =  w''_{uu} -  w''_{vv}
+\end{equation}
+\\
+Теперь выразим $z''_{xx}$,  $z''_{xy}$ и $z''_{yy}$ из $w + z = xy$:
+\begin{equation}
+z = xy - w
+\end{equation}
+
+\begin{equation}
+z'_x = y - w'_x
+\end{equation}
+
+\begin{equation}
+z'_y = x - w'_y
+\end{equation}
+
+\begin{equation}
+z''_{xx} = - w''_{xx} = - ( w''_{uu} + 2w''_{uv} + w''_{vv})
+\end{equation}
+
+
+\begin{equation}
+z''_{xy} = 1 - w''_{xy} = 1 - ( w''_{uu} -  w''_{vv})
+\end{equation}
+
+\begin{equation}
+z''_{yy} = - w''_{yy} = -( w''_{uu} - 2w''_{uv} + w''_{vv})
+\end{equation}
+\\
+Перепишем исходное уравнение в новых переменных и функции:
+
+\begin{equation}
+- ( w''_{uu} + 2w''_{uv} + w''_{vv}) + 2 (1 - ( w''_{uu} -  w''_{vv})) -( w''_{uu} - 2w''_{uv} + w''_{vv}) = 0
+\end{equation}
+\begin{equation}
+- w''_{uu} - 2w''_{uv} - w''_{vv} + 2 -2  w''_{uu} +2  w''_{vv} - w''_{uu} + 2w''_{uv} - w''_{vv} = 0
+\end{equation}
+\begin{equation}
+- w''_{uu}  + 2 -2  w''_{uu}  - w''_{uu}   = 0
+\end{equation}
+\begin{equation}
+4 w''_{uu}  = 2
+\end{equation}
+\begin{equation}
+ w''_{uu}  = \frac{1}{2}
+\end{equation}
+Решим полученное дифференциальное уравнение:
+
+\begin{equation}
+ \frac{d(w_u')}{du}  = \frac{1}{2}
+\end{equation}
+
+\begin{equation}
+ d(w_u')  = \frac{1}{2} du
+\end{equation}
+
+\begin{equation}
+ \int d(w_u')  = \int \frac{1}{2} du
+\end{equation}
+
+\begin{equation}
+\fcolorbox{green}{white}{ $w_u' =  \frac{u}{2} + C(v)$}
+\end{equation}
+
+\begin{equation}
+ \fcolorbox{green}{white}{ $dw = \left( \frac{u}{2} + C(v) \right) du $}
+\end{equation}
+
+\begin{equation}
+ \fcolorbox{green}{white}{ $\int dw =\int  \left( \frac{u}{2} + C (v) \right) du$}
+\end{equation}
+
+\begin{equation}
+\fcolorbox{green}{white}{ $ w =  \frac{u^2}{4} + C(v)u + A(v) $}
+\end{equation}
+
+Решение в новых переменных:
+\begin{equation}
+\fcolorbox{green}{white}{ $ w =  \frac{u^2}{4} + C(v)u + A(v)$}
+\end{equation}
+
+Выполним проверку: вернемся к старым переменным и подставим полученные выражения в исходное равенство:
+
+
+\begin{equation}
+u = x + y
+\end{equation}
+
+\begin{equation}
+\fcolorbox{green}{white}{ $z = xy - w = xy -  \frac{u^2}{4} - C(v)u - A(v) =  xy -  \frac{( x + y)^2}{4} - C(v)( x + y) - A(v) $}
+\end{equation}
+
+\begin{equation}
+\frac{\partial^2 z}{\partial x^2} + 2 \frac{\partial^2 z}{\partial x \partial y} + \frac{\partial^2 z}{\partial y^2} = 0
+\end{equation}
+
+\begin{equation}
+\fcolorbox{green}{white}{ $z'_x = \left(  xy -  \frac{( x + y)^2}{4} - C( x + y) - A \right)'_x = \frac{y}{2} - \frac{ x}{2} -C - (x + y) C'_x - A'_x $}
+\end{equation}
+
+\begin{equation}
+\fcolorbox{green}{white}{ $z'_y = \left(  xy -  \frac{( x + y)^2}{4} - C( x + y) - A \right)'_y  = \frac{x}{2} - \frac{y}{2} -C + (x+y)C'_y + A'_y $}
+\end{equation}
+
+\begin{equation}
+\fcolorbox{green}{white}{$z''_{xx} = \left( \frac{y}{2} - \frac{ x}{2} -C - (x + y) C'_x - A'_x \right)'_x =  - \frac{ 1}{2}  - 2C'_x -  (x + y)C''_x - A''_x$}
+\end{equation}
+
+\begin{equation}
+\fcolorbox{green}{white}{$z''_{xy} = \left(  \frac{y}{2} - \frac{ x}{2} -C - (x + y) C'_x - A'_x \right)'_y =   \frac{ 1}{2} -C'_x + C'_y + (x + y)C''_{xy} + A''_{xy} $}
+\end{equation}
+
+\begin{equation}
+\fcolorbox{green}{white}{ $z''_{yy} = \left(  \frac{x}{2} - \frac{y}{2} -C + (x+y)C'_y + A'_y  \right)'_y =  - \frac{ 1}{2} + 2 C'_y - (x+y)C''_y - A''_y $}
+\end{equation}
+
+Подставим полученные выражения в исходное уравнение уравнение:
+
+\begin{multline}
+\fcolorbox{green}{white}{$- \frac{ 1}{2}  - 2C'_x -  (x + y)C''_x - A''_x + 2 \left(  \frac{ 1}{2} -C'_x + C'_y + (x + y)C''_{xy} + A''_{xy} \right) - $} \\
+ \fcolorbox{green}{white}{ $- \frac{ 1}{2} + 2 C'_y - (x+y)C''_y - A''_y $}
+\end{multline}
+Получили верное равенство.\\
+
+\textit{\textbf{Ответ:}} $ w =  \frac{u^2}{4} + Cu + A $
+
+
+\newpage
+
+
+
+
+\newpage
+\section{Задание 1 (старое).}
+\textit{Найти частные производные данной функции $f(x, y)$ в точке $(0, 0)$. Выяснить, является ли функция дифференцируемой в точке $(0, 0)$. Найти её дифференциал. \textbf{Пункт 2}.}
+\begin{equation}
+f(x, y) = y + \cos \sqrt[3]{x^2 + y^2}
+\end{equation}
+\subsection{Частные производные}
+
+\begin{equation}
+\frac{\partial f}{\partial x} (x_0, y_0) = \lim_{\Delta x \to 0} \frac{\Delta_x f}{\Delta x} = \lim_{\Delta x \to 0} \frac{f ( x_0 + \Delta x, y_0) - f(x_0, y_0)}{\Delta x}
+\end{equation}
+\\
+
+Производная по $x$ в точке $(0, 0)$:
+\begin{multline}
+\frac{\partial f}{\partial x} (0, 0) = \lim_{\Delta x \to 0} \frac{\cos \sqrt[3]{( \Delta x)^2} - \cos 0}{\Delta x} = 
+-2 \lim_{\Delta x \to 0} \frac{\sin^2  \frac{ \sqrt[3]{( \Delta x)^2}}{2}}{\Delta x} =\\
+= -2 \lim_{\Delta x \to 0} \frac{\sin^2  \frac{ \sqrt[3]{( \Delta x)^2}}{2} \sqrt[3]{ \Delta x}}{4 \left(\frac{ \sqrt[3]{( \Delta x)^2}}{2} \right)^2} = 0
+\end{multline}
+
+
+Производная по $y$ в точке $(0, 0)$:
+\begin{multline}
+\frac{\partial f}{\partial y} (0, 0) = \lim_{\Delta y \to 0} \frac{\Delta y + \cos \sqrt[3]{( \Delta y)^2} - \cos 0}{\Delta y} = 
+\lim_{\Delta y \to 0} \left(1 +  \frac{\cos \sqrt[3]{( \Delta y)^2} - 1}{\Delta y} \right) =\\
+= 1 - 2 \lim_{\Delta y \to 0} \frac{\sin^2  \frac{ \sqrt[3]{( \Delta y)^2}}{2}}{\Delta y} 
+=1 -2 \lim_{\Delta y \to 0} \frac{\sin^2  \frac{ \sqrt[3]{( \Delta y)^2}}{2} \sqrt[3]{ \Delta y}}{4 \left(\frac{ \sqrt[3]{( \Delta y)^2}}{2} \right)^2} = 1
+\end{multline}
+
+
+\subsection{Дифференцируемость в точке  $(0, 0)$}
+Функция будет дифференцируема в точке $\left(0;0 \right)$, если для ее приращения в этой точке выполняется равенство:
+\begin{equation}
+\Delta f (0;0) = \frac{\partial f}{\partial x} (0;0) \cdot \Delta x +  \frac{\partial f}{\partial y} (0;0) \cdot \Delta y + o(\rho)\, ,
+\end{equation}
+где $\rho = \sqrt{\Delta x^2 + \Delta y^2}$.\\
+Запишем формулу, подставив в нее выше найденные производные:
+\begin{equation}
+\Delta f (0;0) = 0 \cdot \Delta x +  1 \cdot \Delta y + o( \sqrt{\Delta x^2 + \Delta y^2}) = \Delta y + o( \sqrt{\Delta x^2 + \Delta y^2})
+\end{equation}
+\textit{\textbf{Ответ:}} функция дифференцируема в точке $(0, 0)$.
+
+\subsection{Дифференциал}
+
+\begin{equation}
+df = \frac{\partial f}{\partial x} dx + \frac{\partial f}{\partial y} dy
+\end{equation}
+Найдем частные производные:
+
+\begin{equation}
+\frac{\partial f}{\partial x} = \left( y + \cos \sqrt[3]{x^2 + y^2} \right)'_x = -\frac{2x}{3} \frac{\sin \sqrt[3]{x^2 + y^2}}{\sqrt[3]{ \left( x^2 + y^2 \right)^2}}
+\end{equation}
+
+\begin{equation}
+\frac{\partial f}{\partial y} = \left( y + \cos \sqrt[3]{x^2 + y^2} \right)'_y = 1 -\frac{2y}{3} \frac{\sin \sqrt[3]{x^2 + y^2}}{\sqrt[3]{ \left( x^2 + y^2 \right)^2}}
+\end{equation}
+Терерь запишем полный дифференциал:
+
+\begin{equation}
+df =  -\frac{2x}{3} \frac{\sin \sqrt[3]{x^2 + y^2}}{\sqrt[3]{ \left( x^2 + y^2 \right)^2}} dx + \left( 1 -\frac{2y}{3} \frac{\sin \sqrt[3]{x^2 + y^2}}{\sqrt[3]{ \left( x^2 + y^2 \right)^2}}  \right) dy
+\end{equation}
+
+\newpage
+
+\section{Задание 2}
 \textit{Найти производную данной функции в направлении данного вектора в заданной точке $M$. \textbf{Пункт 8}.}
 
 \begin{equation}
@@ -319,7 +569,7 @@ f'_z  \left( M \right) = 3\frac{1}{2}\frac{\sqrt{3}}{2} \exp \left(\frac{1}{2} +
 
 \newpage
 
-\section{задание}
+\section{Задание 3 (старое).}
 \textit{Произвести указанную замену в данном дифференциальном уравнении. Решить полученное дифференциальное уравнение в новых переменных. Показать, что найденное решение (в исходных переменных) удовлетворяет исходному уравнению. \textbf{Пункт 3}.}\\
 \\
 $u$ и $v$ -- новые независимые переменные, $w$ -- новая функция. $u=x+y, \, v = x - y, \, w+z = xy,$
@@ -497,7 +747,7 @@ z''_{yy} = \left(  \frac{x}{2} - \frac{y}{2} - \right)'_y =  - \frac{ 1}{2}
 
 \newpage
 
-\section{задание}
+\section{Задание 4}
 \textit{Доказать, что уравнение $F(x,y)=0, \, F=(F_1, F_2)$ задает неявно дифференцируемое отображение $y=f(x), \, y=(y_1, y_2), \, x = (x_1, \, x_2)$ в окрестности точки $M(x_1, x_2, y_1, y_2)$. Найти производную этого отображения в точке $M$ (матрица Якоби) и одну (любую на выбор) из производных второго порядка $\frac{\partial f_i}{\partial x_j}$ в точке $M$. \textbf{Пункт 3}.}
 
 \begin{equation}
@@ -661,7 +911,7 @@ f'_x =
 
 \newpage
 
-\section{задание}
+\section{Задание 5}
 \textit{С помощью метода Лагранжа исследовать функцию на условный экстремум при данном уравнении связи. \textbf{Пункт 2}.}
 
 \begin{equation}
