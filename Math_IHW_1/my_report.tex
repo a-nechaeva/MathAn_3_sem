@@ -358,34 +358,35 @@ u = x + y
 \end{equation}
 
 \begin{equation}
-\fcolorbox{green}{white}{ $z'_x = \left(  xy -  \frac{( x + y)^2}{4} - C( x + y) - A \right)'_x = \frac{y}{2} - \frac{ x}{2} -C - (x + y) C'_x - A'_x $}
+\fcolorbox{green}{white}{ $z'_x = \left(  xy -  \frac{( x + y)^2}{4} - C( x + y) - A \right)'_x = \frac{y}{2} - \frac{ x}{2} -C - (x + y) C' - A' $}
+\end{equation}
+
+
+\begin{equation}
+\fcolorbox{green}{white}{ $z'_y = \left(  xy -  \frac{( x + y)^2}{4} - C( x + y) - A \right)'_y  = \frac{x}{2} - \frac{y}{2} -C + (x+y)C' + A' $}
 \end{equation}
 
 \begin{equation}
-\fcolorbox{green}{white}{ $z'_y = \left(  xy -  \frac{( x + y)^2}{4} - C( x + y) - A \right)'_y  = \frac{x}{2} - \frac{y}{2} -C + (x+y)C'_y + A'_y $}
+\fcolorbox{green}{white}{$z''_{xx} = \left( \frac{y}{2} - \frac{ x}{2} -C - (x + y) C' - A' \right)'_x =  - \frac{ 1}{2}  - 2C' -  (x + y)C'' - A''$}
 \end{equation}
 
 \begin{equation}
-\fcolorbox{green}{white}{$z''_{xx} = \left( \frac{y}{2} - \frac{ x}{2} -C - (x + y) C'_x - A'_x \right)'_x =  - \frac{ 1}{2}  - 2C'_x -  (x + y)C''_x - A''_x$}
+\fcolorbox{green}{white}{$z''_{xy} = \left(  \frac{y}{2} - \frac{ x}{2} -C - (x + y) C' - A' \right)'_y =   \frac{ 1}{2} + (x + y)C'' + A'' $}
 \end{equation}
 
 \begin{equation}
-\fcolorbox{green}{white}{$z''_{xy} = \left(  \frac{y}{2} - \frac{ x}{2} -C - (x + y) C'_x - A'_x \right)'_y =   \frac{ 1}{2} -C'_x + C'_y + (x + y)C''_{xy} + A''_{xy} $}
-\end{equation}
-
-\begin{equation}
-\fcolorbox{green}{white}{ $z''_{yy} = \left(  \frac{x}{2} - \frac{y}{2} -C + (x+y)C'_y + A'_y  \right)'_y =  - \frac{ 1}{2} + 2 C'_y - (x+y)C''_y - A''_y $}
+\fcolorbox{green}{white}{ $z''_{yy} = \left(  \frac{x}{2} - \frac{y}{2} -C + (x+y)C' + A'  \right)'_y =  - \frac{ 1}{2} + 2 C' - (x+y)C'' - A''$}
 \end{equation}
 
 Подставим полученные выражения в исходное уравнение уравнение:
 
 \begin{multline}
-\fcolorbox{green}{white}{$- \frac{ 1}{2}  - 2C'_x -  (x + y)C''_x - A''_x + 2 \left(  \frac{ 1}{2} -C'_x + C'_y + (x + y)C''_{xy} + A''_{xy} \right) - $} \\
- \fcolorbox{green}{white}{ $- \frac{ 1}{2} + 2 C'_y - (x+y)C''_y - A''_y $}
+\fcolorbox{green}{white}{$- \frac{ 1}{2}  - 2C' -  (x + y)C'' - A'' + 2 \left(  \frac{ 1}{2} + (x + y)C'' + A'' \right) - $} \\
+ \fcolorbox{green}{white}{ $- \frac{ 1}{2} + 2 C' - (x+y)C'' - A'' = 0 $}
 \end{multline}
 Получили верное равенство.\\
 
-\textit{\textbf{Ответ:}} $ w =  \frac{u^2}{4} + Cu + A $
+\textit{\textbf{Ответ:}} \fcolorbox{green}{white}{$ w =  \frac{u^2}{4} + C(v)u + A(v) $}
 
 
 \newpage
